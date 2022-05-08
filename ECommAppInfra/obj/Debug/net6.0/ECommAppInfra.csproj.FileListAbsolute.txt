@@ -1,0 +1,15 @@
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\bin\Debug\net6.0\ECommAppInfra.deps.json
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\bin\Debug\net6.0\ECommAppInfra.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\bin\Debug\net6.0\ECommAppInfra.pdb
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\bin\Debug\net6.0\ECommAppCore.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\bin\Debug\net6.0\ECommAppCore.pdb
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\obj\Debug\net6.0\ECommAppInfra.csproj.AssemblyReference.cache
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\obj\Debug\net6.0\ECommAppInfra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\obj\Debug\net6.0\ECommAppInfra.AssemblyInfoInputs.cache
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\obj\Debug\net6.0\ECommAppInfra.AssemblyInfo.cs
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\obj\Debug\net6.0\ECommAppInfra.csproj.CoreCompileInputs.cache
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\obj\Debug\net6.0\ECommAppInfra.csproj.CopyComplete
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\obj\Debug\net6.0\ECommAppInfra.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\obj\Debug\net6.0\refint\ECommAppInfra.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\obj\Debug\net6.0\ECommAppInfra.pdb
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppInfra\obj\Debug\net6.0\ref\ECommAppInfra.dll

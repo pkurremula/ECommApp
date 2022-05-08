@@ -1,0 +1,12 @@
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppCore\bin\Debug\net6.0\ECommAppCore.deps.json
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppCore\bin\Debug\net6.0\ECommAppCore.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppCore\bin\Debug\net6.0\ECommAppCore.pdb
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppCore\obj\Debug\net6.0\ECommAppCore.csproj.AssemblyReference.cache
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppCore\obj\Debug\net6.0\ECommAppCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppCore\obj\Debug\net6.0\ECommAppCore.AssemblyInfoInputs.cache
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppCore\obj\Debug\net6.0\ECommAppCore.AssemblyInfo.cs
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppCore\obj\Debug\net6.0\ECommAppCore.csproj.CoreCompileInputs.cache
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppCore\obj\Debug\net6.0\ECommAppCore.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppCore\obj\Debug\net6.0\refint\ECommAppCore.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppCore\obj\Debug\net6.0\ECommAppCore.pdb
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppCore\obj\Debug\net6.0\ref\ECommAppCore.dll
