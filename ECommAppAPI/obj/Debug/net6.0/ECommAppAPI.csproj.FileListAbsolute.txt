@@ -110,3 +110,6 @@ C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\obj\Debug\net6.0\refint\E
 C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\obj\Debug\net6.0\ECommAppAPI.pdb
 C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\obj\Debug\net6.0\ECommAppAPI.genruntimeconfig.cache
 C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\obj\Debug\net6.0\ref\ECommAppAPI.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\bin\Debug\net6.0\AutoMapper.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\bin\Debug\net6.0\ECommAppAPI.staticwebassets.runtime.json
