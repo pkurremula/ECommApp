@@ -6,13 +6,13 @@ using ECommAppCore.Interfaces;
 using ECommAppCore.Specifications;
 using ECommAppAPI.DTOs;
 using AutoMapper;
+using ECommAppAPI.Errors;
+using Microsoft.AspNetCore.Http;
 //using System.Collections.Generic;
 
 namespace ECommAppAPI.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ProductsController: ControllerBase
+    public class ProductsController: BaseApiController
     {
         private readonly IGenericRepository<Product> _productsRepo;
         private readonly IGenericRepository<ProductBrand> _productBrandRepo;
@@ -42,11 +42,15 @@ namespace ECommAppAPI.Controllers
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         public async Task<ActionResult<ProductToReturnDTO>> GetProduct(int Id)
         {
             var spec = new ProductsWithTypesAndBrandSpecification(Id);
 
             var product = await _productsRepo.GetEntityWithSpec(spec);
+
+            if (product == null) return NotFound(new ApiResponse(404));
 
             return _mapper.Map<Product, ProductToReturnDTO>(product);
         }

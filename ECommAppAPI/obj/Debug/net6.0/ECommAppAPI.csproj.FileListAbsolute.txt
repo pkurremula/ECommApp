@@ -113,3 +113,11 @@ C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\obj\Debug\net6.0\ref\ECom
 C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\bin\Debug\net6.0\AutoMapper.dll
 C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\bin\Debug\net6.0\ECommAppAPI.staticwebassets.runtime.json
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Prabhanjan\Angular\Udemy\ECart\ECommApp\ECommAppAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
