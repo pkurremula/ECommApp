@@ -8,6 +8,7 @@ using ECommAppAPI.DTOs;
 using AutoMapper;
 using ECommAppAPI.Errors;
 using Microsoft.AspNetCore.Http;
+using ECommAppAPI.Helpers;
 //using System.Collections.Generic;
 
 namespace ECommAppAPI.Controllers
@@ -31,14 +32,21 @@ namespace ECommAppAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDTO>>> GetProducts()
+        public async Task<ActionResult<Pagination<IReadOnlyList<ProductToReturnDTO>>>> GetProducts([FromQuery] ProductSpecParams productParams)
         {
-            var spec = new ProductsWithTypesAndBrandSpecification();
+            var spec = new ProductsWithTypesAndBrandSpecification(productParams);
+
+            var countSpec = new ProductWithFiltersForCountSpecification(productParams);
+
+            var totalItems = await _productsRepo.CountAsync(spec);
 
             var products = await _productsRepo.ListAsync(spec);
 
-            return Ok(_mapper.Map< IReadOnlyList<Product>, 
-                IReadOnlyList<ProductToReturnDTO>>(products));
+            var data = _mapper.Map<IReadOnlyList<Product>,
+                IReadOnlyList<ProductToReturnDTO>>(products);
+
+            return Ok(new Pagination<ProductToReturnDTO>(productParams.PageIndex,
+                productParams.PageSize, totalItems, data));
         }
 
         [HttpGet("{id}")]
