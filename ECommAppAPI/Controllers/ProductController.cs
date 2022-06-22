@@ -9,6 +9,7 @@ using AutoMapper;
 using ECommAppAPI.Errors;
 using Microsoft.AspNetCore.Http;
 using ECommAppAPI.Helpers;
+using Microsoft.AspNetCore.Cors;
 //using System.Collections.Generic;
 
 namespace ECommAppAPI.Controllers
@@ -32,6 +33,7 @@ namespace ECommAppAPI.Controllers
         }
 
         [HttpGet]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<Pagination<IReadOnlyList<ProductToReturnDTO>>>> GetProducts([FromQuery] ProductSpecParams productParams)
         {
             var spec = new ProductsWithTypesAndBrandSpecification(productParams);

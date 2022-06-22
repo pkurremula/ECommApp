@@ -1,13 +1,12 @@
 {
-  "name": "ecomm-app-client",
+  "name": "test-route-t",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --ssl --ssl-cert %APPDATA%\\ASP.NET\\https\\%npm_package_name%.pem --ssl-key %APPDATA%\\ASP.NET\\https\\%npm_package_name%.key",
+    "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "prestart": "node aspnetcore-https"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +20,6 @@
     "@angular/router": "~13.2.0",
     "bootstrap": "^5.1.3",
     "font-awesome": "^4.7.0",
-    "jest-editor-support": "*",
     "ngx-bootstrap": "^8.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

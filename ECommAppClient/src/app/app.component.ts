@@ -1,21 +1,37 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  public forecasts?: WeatherForecast[];
+export class AppComponent implements OnInit {
+  title = 'SkiNet';
 
-  constructor(http: HttpClient) {
-    http.get<WeatherForecast[]>('/weatherforecast').subscribe(result => {
-      this.forecasts = result;
-    }, error => console.error(error));
+  constructor(private http: HttpClient) { }
+
+  ngOnInit(): void {
+    this.http.get('http://localhost:5164/api/Products').subscribe((response: any) => {
+      console.log(response);
+    }, error => {
+      console.log(error);
+    });
   }
 
-  title = 'ECommAppClient';
+  //public forecasts?: WeatherForecast[];
+
+  //constructor(http: HttpClient) {
+  //  http.get<WeatherForecast[]>('/weatherforecast').subscribe(result => {
+  //    this.forecasts = result;
+  //  }, error => console.error(error));
+  //}
+
+  //ngOnInit(): void {
+
+  //}
+
+  //title = 'ECommAppClient';
 }
 
 interface WeatherForecast {

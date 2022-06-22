@@ -36,6 +36,8 @@ namespace ECommAppAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
 
@@ -43,6 +45,28 @@ namespace ECommAppAPI
 
             services.AddApplicationServices();
             services.AddSwaggerDocumentation();
+            //services.AddCors(opt =>
+            //{
+            //    opt.AddPolicy("CorsPolicy", policy =>
+            //    {
+            //        policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200/", "http://localhost:4200/");
+            //    });
+            //});
+
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
+
+            //services.AddCors(options =>
+            //{
+            //    options.AddPolicy(name: MyAllowSpecificOrigins,
+            //                      policy =>
+            //                      {
+            //                          policy.WithOrigins("http://localhost:4200/",
+            //                                              "http://www.contoso.com");
+            //                      });
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,10 +81,13 @@ namespace ECommAppAPI
 
             app.UseStatusCodePagesWithReExecute("/UrlError/{0}");
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
             app.UseStaticFiles();
+
+            //app.UseCors("CorsPolicy");
+            app.UseCors(options => options.AllowAnyOrigin());
 
             app.UseAuthorization();
 
